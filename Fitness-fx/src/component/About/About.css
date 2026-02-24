@@ -1,0 +1,68 @@
+
+/*** About Start ***/
+.about {
+    position: relative;
+    overflow: hidden;
+    background: var(--bs-dark);
+}
+
+@media (min-width: 992px) {
+    .about::before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        right: -400px;
+        background: var(--bs-primary);
+        transform: skew(28deg);
+    }
+
+    .about .about-content {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about::after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        left: -400px;
+        background: var(--bs-primary);
+        transform: skew(28deg);
+    }
+
+    .about .about-content {
+        margin-bottom: 0px !important;
+    }
+}
+
+.about .about-content {
+    position: relative;
+    z-index: 9;
+}
+
+.about .about-img {
+    position: relative;
+    z-index: 10;
+}
+
+.about .tab-class .nav .nav-item a {
+    position: relative;
+    transform: skew(18deg);
+    text-align: center;
+    background: var(--bs-white);
+    color: var(--bs-dark);
+}
+
+.about .tab-class .nav .nav-item a span {
+    transform: skew(-18deg);
+}
+
+.about .tab-class .nav .nav-item a.active {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}

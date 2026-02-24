@@ -27,10 +27,10 @@ const HeroCarousel = () => {
                     <h4 className="text-primary text-uppercase fw-bold mb-4">
                       Welcome to our Fitness Center
                     </h4>
-                    <h1 className="display-1 text-white mb-4">
+                    <h1 className="display-1 text-white mb-4" style={{fontSize:59,fontWeight:900}}>
                       The best gym center is now in your city
                     </h1>
-                    <p className="mb-5 fs-5">
+                    <p className="mb-5 fs-5" style={{fontSize:59,fontWeight:900}}>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy...
                     </p>
                     <div className="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
@@ -61,7 +61,7 @@ const HeroCarousel = () => {
                     <h4 className="text-primary text-uppercase fw-bold mb-4">
                       Welcome to our Fitness Center
                     </h4>
-                    <h1 className="display-2 text-white mb-4">
+                    <h1 className="display-2 text-white mb-4" style={{fontSize:59,fontWeight:900}}>
                       Stay healthy by exercising at the best gym center
                     </h1>
                     <p className="mb-5 fs-5">
