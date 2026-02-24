@@ -1,0 +1,126 @@
+
+/*** Features Start ***/
+.feature {
+    overflow: hidden;
+}
+
+.feature-carousel.owl-carousel {
+    z-index: 9;
+    padding: 0 60px;
+    transform: skew(10deg);
+}
+
+.feature .feature-shaps {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin-top: -200px;
+    transform: skewX(-10deg);
+    border: 3px solid var(--bs-primary);
+    z-index: 2;
+}
+
+@media (max-width: 576px) {
+    .feature .feature-shaps {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+.feature .feature-item {
+    position: relative;
+}
+
+.feature .feature-item .feature-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature .feature-item .feature-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: rgba(255, 245, 225, .5);
+    transition: 0.5s;
+}
+
+.feature .feature-item:hover .feature-img::after {
+    height: 100%;
+    transform: scaleX(-1.1);
+}
+
+.feature .feature-item .feature-img img {
+    transition: 0.5s;
+}
+
+.feature .feature-item:hover .feature-img img {
+    transform: scaleX(-1.1);
+}
+
+.feature .feature-item .feature-content {
+    position: relative;
+    background: var(--bs-white);
+    z-index: 1;
+}
+
+.feature .feature-item .feature-content h4 {
+    transition: 0.5s;
+}
+
+.feature .feature-item:hover .feature-content h4 {
+    color: var(--bs-primary);
+}
+
+.feature .feature-item .feature-content::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    background: var(--bs-dark);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.feature .feature-item:hover .feature-content::after {
+    height: 100%;
+}
+
+.feature-carousel .owl-nav .owl-prev,
+.feature-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -122px;
+    transform: skew(18deg);
+    background: var(--bs-dark);
+    color: var(--bs-white);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.feature-carousel .owl-nav .owl-prev i,
+.feature-carousel .owl-nav .owl-next i {
+    transform: skew(-18deg);
+}
+
+.feature-carousel .owl-nav .owl-prev {
+    left: 0;
+}
+.feature-carousel .owl-nav .owl-next {
+    right: 150px;
+}
+
+.feature-carousel .owl-nav .owl-prev:hover,
+.feature-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
