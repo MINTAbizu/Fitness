@@ -1,0 +1,41 @@
+
+/*** Fitness Goal Start ***/
+.goal {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 245, 225, 0.9), rgba(12, 24, 68, 0.9)), url(../img/goal-background-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.goal::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-right: -200px;
+    transform: skew(18deg);
+    background: rgba(200, 0, 54, .1);
+}
+
+.goal .goal-item {
+    transform: skew(10deg);
+    box-shadow: 0 0 45px rgba(12, 24, 68, 0.4);
+    margin: 0 15px 15px 15px;
+}
+
+@media (min-width: 992px) {
+    .goal .goal-content {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .goal .goal-content {
+        padding-bottom: 0;
+    }
+}
+/*** Fitness Goal End ***/
