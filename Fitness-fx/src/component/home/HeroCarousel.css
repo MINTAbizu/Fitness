@@ -13,7 +13,7 @@
 }
 
 .hero-bg-half-1 {
-    background-image: url(../../assets/img/kidus1.jpg);
+    background-image: url(../../assets/ETHIOAESTHETICS/h2.jpg);
     clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
     filter: grayscale(15%);
     transform: scale(100% - 50%);
@@ -21,14 +21,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 35%;
+    width: 55%;
     height: 100%;
     right: 0;
     top: 0;
 }
 
 .hero-bg-half-2 {
-    background-image: url(../../assets//img/kidus7.jpg);
+    background-image: url(../../assets/ETHIOAESTHETICS/h1.jpg);
     clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
     filter: grayscale(15%);
     transform: scale(100% - 50%);
@@ -36,15 +36,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 35%;
+    width: 45%;
     height: 100%;
     right: 0;
     top: 0;
 }
-
+.hero-bg-half-3 {
+    background-image: url(../../assets/ETHIOAESTHETICS/h3.jpg);
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    filter: grayscale(15%);
+    transform: scale(100% - 50%);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
 @media (max-width: 991px) {
     .hero-bg-half-1 {
-        background-image: url(../../assets//img/kidus7.jpg);
+        background-image: url(../../assets/ETHIOAESTHETICS/h2.jpg);
         clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
         filter: grayscale(0%);
         transform: scale(100% - 0%);

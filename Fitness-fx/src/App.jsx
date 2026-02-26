@@ -12,6 +12,8 @@ import Testimonial from './component/Testimonial/Testimonial'
 import Footer from './component/footer/Footer'
 import ClassTimetable from './component/ClassTimetable/ClassTimetable'
 import BMICalculatorPage from './component/BMICalculatorPage/BMICalculatorPage'
+import YouTubeVideos from './component/Youtube/Youtube';
+import Pricing from './component/pricing/PricingSection';
 function App() {
   return (
     <>
@@ -37,7 +39,10 @@ function App() {
 
       <FeatureSection/>
 
+      <YouTubeVideos/>
+
       <Classes/>
+      <Pricing/>
       <Testimonial/>
             </>
           }

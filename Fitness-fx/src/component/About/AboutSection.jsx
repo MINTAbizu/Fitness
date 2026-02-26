@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
-import about  from "../../assets/img/coatching2.jpg";
+import about  from "../../assets/ETHIOAESTHETICS/h1.jpg";
 const tabData = [
   {
     id: "tab-1",

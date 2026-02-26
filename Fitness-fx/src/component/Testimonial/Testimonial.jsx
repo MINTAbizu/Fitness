@@ -8,9 +8,9 @@ import "swiper/css/navigation";
 
 import "./testimonial.css";
 
-import testimonial1 from "../../assets/img/kidus2.jpg";
-import testimonial2 from "../../assets/images (4).jpg";
-import testimonial3 from "../../assets/kidus30.JPG";
+import testimonial1 from "../../assets/ETHIOAESTHETICS/h6.jpg";
+import testimonial2 from "../../assets/ETHIOAESTHETICS/h5.jpg";
+import testimonial3 from "../../assets/ETHIOAESTHETICS/h8.jpg";
 
 const testimonialsData = [
   {

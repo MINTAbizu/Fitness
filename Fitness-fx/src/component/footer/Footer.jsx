@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item">
               <h4 className="text-white mb-4">
-                <i className="fas fa-hand-rock text-primary me-2"></i> TENAS
+                <i className="fas fa-hand-rock text-primary me-2"></i> ETHIOAESTHETICS
               </h4>
               <p className="mb-0" style={{color:'white'}}>
                 Dolor amet sit justo amet elitr clita ipsum elitr est. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.

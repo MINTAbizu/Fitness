@@ -12,7 +12,7 @@ const Header = () => {
           <div className="d-flex align-items-center h-100">
             <a href="#" className="navbar-brand" style={{ height: "125px" }}>
               <h1 className="text-primary mb-0">
-                <i className="fas fa-hand-rock me-2"></i> TENAS-GYM & SPA
+                <i className="fas fa-hand-rock me-2"></i> ETHIOAESTHETICS
               </h1>
               {/* <img src={logo} alt="Logo" /> */}
             </a>
