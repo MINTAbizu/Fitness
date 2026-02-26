@@ -1,5 +1,7 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
+// import logo from "../../assets/logo.png";
 const Header = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const Header = () => {
               <h1 className="text-primary mb-0">
                 <i className="fas fa-hand-rock me-2"></i> TENAS-GYM & SPA
               </h1>
-              {/* <img src="img/logo.png" alt="Logo" /> */}
+              {/* <img src={logo} alt="Logo" /> */}
             </a>
           </div>
 
@@ -37,12 +39,12 @@ const Header = () => {
                 <div className="col-lg-4 text-center text-lg-end">
                   <div className="d-flex justify-content-end">
                     <div className="d-flex align-items-center small">
-                      <a href="#" className="login-btn text-body me-3 pe-3">
+                      <Link to="/login" className="login-btn text-body me-3 pe-3">
                         <span>Login</span>
-                      </a>
-                      <a href="#" className="text-body me-3">
+                      </Link>
+                      <Link to="/register" className="text-body me-3">
                         Register
-                      </a>
+                      </Link>
                     </div>
                     <div className="d-flex pe-3">
                       <a className="btn p-0 text-primary me-3" href="#"><i className="fab fa-facebook-f"></i></a>
@@ -65,7 +67,8 @@ const Header = () => {
                   {/* <img src="img/logo.png" alt="Logo" /> */}
                 </a>
 
-                <button
+                <button  
+                style={{marginRight:"20px",borderRadius:"10px", backgroundColor:"orange", color:"white", fontWeight:800}}
                   className="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
@@ -76,26 +79,28 @@ const Header = () => {
 
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                   <div className="navbar-nav mx-0 mx-lg-auto">
-                    <a href="index.html" className="nav-item nav-link active">Home</a>
-                    <a href="about.html" className="nav-item nav-link">About</a>
-                    <a href="course.html" className="nav-item nav-link">Courses</a>
-                    <a href="blog.html" className="nav-item nav-link">Blogs</a>
+                    <Link to="/" className="nav-item nav-link active">Home</Link>
+                    <Link to="/about" className="nav-item nav-link">About</Link>
+                    <Link to="/courses" className="nav-item nav-link">Courses</Link>
+                    <Link to="/blog" className="nav-item nav-link">Blogs</Link>
 
                     <div className="nav-item dropdown">
-                      <a href="#" className="nav-link" data-bs-toggle="dropdown">
+                      <Link to="#" className="nav-link" data-bs-toggle="dropdown">
                         <span className="dropdown-toggle">Pages</span>
-                      </a>
+                      </Link>
                       <div className="dropdown-menu">
-                        <a href="feature.html" className="dropdown-item">Our Features</a>
-                        <a href="team.html" className="dropdown-item">Our team</a>
-                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                        <a href="404.html" className="dropdown-item">404 Page</a>
+                        <Link to="/features" className="dropdown-item">Our Features</Link>
+                        <Link to="/team" className="dropdown-item">Our team</Link>
+                        <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
+                        <Link to="/class-timetable" className="dropdown-item">ClassTimetable</Link>
+                        <Link to="/bmi-calculator" className="dropdown-item">BMI Calculator</Link>
+
                       </div>
                     </div>
 
-                    <a href="contact.html" className="nav-item nav-link">Contact</a>
+                    <Link to="/contact" className="nav-item nav-link">Contact</Link>
 
-                    <div className="nav-btn ps-3">
+                    {/* <div className="nav-btn ps-3">
                       <button
                         className="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0"
                         data-bs-toggle="modal"
@@ -106,7 +111,7 @@ const Header = () => {
                       <a href="#" className="btn btn-primary py-2 px-4 ms-0 ms-lg-3">
                         <span>Get Quote</span>
                       </a>
-                    </div>
+                    </div> */}
 
                     <div className="nav-shaps-1"></div>
                   </div>
@@ -119,7 +124,7 @@ const Header = () => {
       {/* Navbar & Hero End */}
 
       {/* Modal Search Start */}
-      <div
+      {/* <div
         className="modal fade"
         id="searchModal"
         tabIndex="-1"
@@ -149,7 +154,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Modal Search End */}
     </>
   );

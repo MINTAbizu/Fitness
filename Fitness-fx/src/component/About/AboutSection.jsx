@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
-import about  from "../../assets/img/about-2.png";
+import about  from "../../assets/img/coatching2.jpg";
 const tabData = [
   {
     id: "tab-1",
@@ -133,8 +133,11 @@ const AboutSection = () => {
                 <img
                   src={about}
                   className="img-fluid w-100"
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover"
+                    }}
                   alt="About Fitness"
+               
+
                 />
               </div>
             </div>

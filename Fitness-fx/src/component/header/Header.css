@@ -1,5 +1,5 @@
 /* =========================
-   Variables (Bootstrap colors)
+   Variables
 ========================= */
 :root {
     --primary: hwb(216 2% 77%);
@@ -29,7 +29,9 @@
     z-index: 1;
 }
 
-/* Topbar links */
+/* =========================
+   Topbar
+========================= */
 .topbar .login-btn {
     position: relative;
 }
@@ -48,6 +50,11 @@
 /* =========================
    Navbar Base
 ========================= */
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
 .navbar-brand,
 .navbar-brand-2 {
     position: relative;
@@ -55,6 +62,10 @@
     display: flex;
     align-items: center;
     z-index: 99;
+}
+
+.navbar-brand h1 {
+    font-size: 26px;
 }
 
 .navbar-brand::before,
@@ -68,11 +79,6 @@
     background: var(--dark);
     transform: rotate(-18deg);
     z-index: -1;
-}
-
-.navbar-light .navbar-brand img {
-    max-height: 60px;
-    transition: 0.5s;
 }
 
 /* =========================
@@ -95,6 +101,7 @@
     color: var(--primary);
 }
 
+/* Dropdown */
 .navbar-nav .dropdown-menu {
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -115,82 +122,16 @@
 
 .nav-btn a.btn:hover,
 .btn-search:hover {
-    background: darken(var(--primary), 5%);
+    background: var(--primary);
+    filter: brightness(0.95);
     color: var(--white);
 }
 
 /* =========================
-   Responsive Media Queries
+   Desktop Dropdown Animation
 ========================= */
-
-/* Mobile First - max-width: 991px */
-@media (max-width: 991px) {
-
-    .header-top {
-        max-height: 80px;
-    }
-
-    .navbar {
-        justify-content: space-between;
-        padding: 15px 0;
-    }
-
-    .navbar-brand {
-        display: none;
-    }
-
-    .navbar-brand-2 {
-        width: 180px;
-        height: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-brand-2::before {
-        width: 100%;
-        height: 600px;
-        top: -200px;
-        right: 18px;
-        transform: rotate(-18deg);
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        background: var(--light);
-    }
-
-    .navbar-nav .nav-item {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-        width: 100%;
-    }
-
-    .navbar-nav .nav-btn {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .navbar-toggler {
-        padding: 8px 15px;
-        border: none;
-        background: var(--primary);
-        color: var(--dark);
-        transform: skew(18deg);
-    }
-
-    .navbar-toggler span {
-        transform: skew(-18deg);
-    }
-}
-
-/* Tablet & Desktop - min-width: 992px */
 @media (min-width: 992px) {
+
     .navbar {
         padding: 20px 0;
         justify-content: center;
@@ -210,7 +151,6 @@
         background: transparent;
     }
 
-    /* Dropdown animation */
     .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -227,7 +167,7 @@
         opacity: 1;
     }
 
-    /* Right skewed shape */
+    /* Right skew shapes */
     .nav-shaps-1,
     .nav-shaps-2 {
         position: absolute;
@@ -245,5 +185,83 @@
 
     .nav-shaps-2 {
         width: 12%;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+@media (max-width: 991px) {
+
+    /* Remove skew shapes on small screens */
+    .header-top::after,
+    .nav-shaps-1,
+    .nav-shaps-2 {
+        display: none;
+    }
+
+    .header-top {
+        padding: 10px 0;
+    }
+
+    /* Responsive logo */
+    .navbar-brand {
+        display: block;
+        height: auto !important;
+    }
+
+    .navbar-brand h1 {
+        font-size: 18px;
+    }
+
+    /* Fix collapse menu */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--light);
+        padding: 40px;
+        /* margin: 30px 0 0 0; */
+        z-index: 9999;
+        box-shadow: 0 10px 30px rgb(95, 56, 56)
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-btn a,
+    .nav-btn button {
+        width: 100%;
+    }
+
+    /* Better toggler */
+    .navbar-toggler {
+        border: none;
+        background: var(--primary);
+        padding: 8px 12px;
+    }
+
+    .navbar-toggler span {
+        color: #fff;
     }
 }

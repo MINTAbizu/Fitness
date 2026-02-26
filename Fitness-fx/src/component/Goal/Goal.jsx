@@ -1,6 +1,7 @@
 import React from "react";
 import "./Goal.css"; // Create a CSS file for styling
-import goal from "../../assets/img/fitness-goal-banner.png"; // Import the image
+import goal from "../../assets/img/kidus1.jpg"
+; // Import the image
 import icon1 from "../../assets/img/icon-1.png"; // Import the first icon
 import icon2 from "../../assets/img/icon-5.png"; // Import the first icon
 
@@ -69,10 +70,10 @@ const GoalSection = () => {
 
           {/* Right Column */}
           <div className="col-lg-6">
-            <div className="h-100">
+            <div className="h-50"  style={{width:'100%'}} >
               <img
                 src={goal}
-                className="img-fluid h-100"
+                className=" h-100"
                 style={{ objectFit: "cover", borderRadius: "12px" }}
                 alt="Fitness Goals"
               />

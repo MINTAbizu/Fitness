@@ -41,9 +41,9 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item">
               <h4 className="text-white mb-4">
-                <i className="fas fa-hand-rock text-primary me-2"></i> Fitness
+                <i className="fas fa-hand-rock text-primary me-2"></i> TENAS
               </h4>
-              <p className="mb-0">
+              <p className="mb-0" style={{color:'white'}}>
                 Dolor amet sit justo amet elitr clita ipsum elitr est. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.
               </p>
             </div>
@@ -71,21 +71,21 @@ const Footer = () => {
                   <i className="fas fa-map-marker-alt text-primary me-2"></i>
                   <div>
                     <h5 className="text-white mb-2">Address</h5>
-                    <p className="mb-0">123 street New York</p>
+                    <p className="mb-0" style={{color:'white'}}>Addiss Ababa</p>
                   </div>
                 </div>
                 <div className="col-12 d-flex">
                   <i className="fas fa-envelope text-primary me-2"></i>
                   <div>
                     <h5 className="text-white mb-2">Mail Us</h5>
-                    <p className="mb-0">info@example.com</p>
+                    <p className="mb-0" style={{color:'white'}}>TenasGym@SPA.com</p>
                   </div>
                 </div>
                 <div className="col-12 d-flex">
                   <i className="fa fa-phone-alt text-primary me-2"></i>
                   <div>
                     <h5 className="text-white mb-2">Telephone</h5>
-                    <p className="mb-0">(+012) 3456 7890 123</p>
+                    <p className="mb-0" style={{color:'white'}}>+251 911 123 456</p>
                   </div>
                 </div>
               </div>

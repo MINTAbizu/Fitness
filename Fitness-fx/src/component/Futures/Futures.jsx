@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import modules from swiper/modules
 import { Autoplay, Pagination } from "swiper/modules";
 
-import feature1 from "../../assets/img/feature-1.jpg"; // Import feature images
-import feature2 from "../../assets/img/feature-2.jpg";
-import feature3 from "../../assets/img/feature-3.jpg";
-import feature4 from "../../assets/img/feature-4.jpg";
+import feature1 from "../../assets/kidus30.JPG"; // Import feature images
+import feature2 from "../../assets/kidus30.JPG";
+import feature3 from "../../assets/kidus30.JPG";
+import feature4 from "../../assets/kidus30.JPG";
 
 // Import styles
 import "swiper/css";
